@@ -33,7 +33,8 @@ mod_nearest_words_table_server <- function(input, output, session, react_wv){
     req(react_wv())
     
     DT::datatable(text2vec::sim2(x = wv_main, y = react_wv(), method = "cosine", norm = "l2") %>%
-                    data.frame(row.names = row.names(wv_main)) %>% tibble::rownames_to_column(),
+                    data.frame(row.names = row.names(wv_main)) %>% tibble::rownames_to_column() %>%
+                    dplyr::rename_at(dplyr::vars(2), ~ paste("cosine.similarity")) %>% dplyr::arrange(desc(cosine.similarity)),
                   caption = "Table 1. Cosine similarity of words to calculated word vector.")
   })
 }
