@@ -34,6 +34,7 @@ A user will need to have R and RStudio installed on their local environment.  Th
 * magrittr
 * purrr
 
+
 ## Running the application locally
 
 A user can run this developmental Shiny application by pulling the repository to their local machine and opening the project in RStudio.  This prototype was built using [Golem](https://thinkr-open.github.io/golem/).  To run from RStudio, follow the [directions](https://thinkr-open.github.io/golem/articles/z_golem_cheatsheet.html) as specified under 3. Day-to-day dev with golem part A.  The code to be run is also shown in R code block below which can be found in covid.word.embedding/dev/run_dev.R file.
@@ -54,7 +55,7 @@ covid.word.embedding::run_app()
 
 ## How to use the application locally
 
-After running the application locally, a user can interactively add or subtract word vectors produced by [GloVe algorithm](https://nlp.stanford.edu/projects/glove/) from the CORD-19 dataset, which can then identify the closest related words to the calculated word vector by cosine similarity.  A positive number indicates a closer cosine similarity between the calculated word vector and the word.  This [article](https://medium.com/swlh/playing-with-word-vectors-308ab2faa519) provides some background on adding and subtracting word vectors and the interesting relationships that can be uncovered.  The purpose of this demo application is help users explore potentially related words/features from the CORD-19 dataset.
+After running the application locally, a user can interactivley add or subtract word vectors produced by [GloVe algorithm](https://nlp.stanford.edu/projects/glove/) from the CORD-19 dataset, which can then identify the closest related words to the calculated word vector by cosine similarity.  A positive number indicates a closer cosine similarity between the calculated word vector and the word.  This [article](https://medium.com/swlh/playing-with-word-vectors-308ab2faa519) provides some background on adding and subtracting word vectors and the interesting relationships that can be uncovered.  The purpose of this demo application is help users explore potentially related words/features fromt the CORD-19 dataset.
 
 ## Background on the GloVe model training
 
