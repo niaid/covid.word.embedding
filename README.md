@@ -11,8 +11,23 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 The goal of this project is to provide a demo Shiny app that can be run
 on a user’s local environment to explore a GloVe model trained on the
-[CORD19
+[CORD-19
 dataset](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge).
+
+## Dependencies prior to setting up application locally
+
+A user will need to have R and RStudio installed on their local
+environment. The following packages will need to be installed with any
+dependencies:
+
+  - golem
+  - thinkr
+  - DT
+  - text2ved
+  - dplyr
+  - tibble
+  - magrittr
+  - purrr
 
 ## Running the application locally
 
@@ -42,9 +57,9 @@ covid.word.embedding::run_app()
 
 ## How to use the application locally
 
-After running the application locally, a user can interactivley add or
+After running the application locally, a user can interactively add or
 subtract word vectors produced by [GloVe
-algorithm](https://nlp.stanford.edu/projects/glove/) from the CORD19
+algorithm](https://nlp.stanford.edu/projects/glove/) from the CORD-19
 dataset, which can then identify the closest related words to the
 calculated word vector by cosine similarity. A positive number indicates
 a closer cosine similarity between the calculated word vector and the
@@ -53,17 +68,18 @@ word. This
 provides some background on adding and subtracting word vectors and the
 interesting relationships that can be uncovered. The purpose of this
 demo application is help users explore potentially related
-words/features fromt the CORD19 dataset.
+words/features from the CORD-19 dataset.
 
 ## Background on the GloVe model training
 
 The model was trainined using [text2vec](http://text2vec.org/). An
-independent R project was set up and the CORD19 dataset downloaded into
-the following project folder PROJ\_ROOT/rawdata/. The purpose of the
-code chunk below is to provide interested users an opportunity to
-explore creating their own GloVe models from the CORD19 dataset and to
-understand how the GloVe model in the prototype app was generated. Given
-the large size of the dataset, this should be done independently.
+independent R project was set up and the CORD-19 dataset downloaded on
+3/23/2020 into the following project folder PROJ\_ROOT/rawdata/. The
+purpose of the code chunk below is to provide interested users an
+opportunity to explore creating their own GloVe models from the CORD-19
+dataset and to understand how the GloVe model in the prototype app was
+generated. Given the large size of the dataset, this should be done
+independently.
 
 ``` r
 ## libraries --------
