@@ -2,7 +2,7 @@ Package: covid.word.embedding
 Title: This demo shiny app facilitates comparison of word relationships from a word embedding model
 Version: 0.0.0.9000
 Authors@R: person('Gabriel', 'Rosenfeld', email = 'gabriel.rosenfeld@nih.gov', role = c('cre', 'aut'))
-Description: The GloVE word embedding model was fit on the CORD19 kaggle dataset.  This shiny app
+Description: The GloVE word embedding model was fit on the CORD-19 kaggle dataset.  This shiny app
   facilitates analyses of the word relationships that are captured by the model for demonstration purposes.
 License: CC0
 Encoding: UTF-8
